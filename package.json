@@ -1,0 +1,8 @@
+{
+  "name": "vim-chrome",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:melonmanchan/vim-chrome.git",
+  "author": "Matti Jokitulppo <melonmanchan@gmail.com>",
+  "license": "MIT"
+}
