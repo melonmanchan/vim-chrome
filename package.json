@@ -6,6 +6,13 @@
   "author": "Matti Jokitulppo <melonmanchan@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "tsc && cp -r src/* build/ && rm build/*.ts"
+    "build": "tsc && cp -r src/* build/ && rm build/*.ts",
+    "lint": "eslint src/**/*.ts"
+  },
+  "devDependencies": {
+    "eslint": "^6.4.0",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "prettier": "^1.18.2"
   }
 }
