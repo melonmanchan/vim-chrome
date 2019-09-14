@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc && cp -r src/* build/ && rm build/*.ts",
-    "start:dev": "concurrently 'tsc -w' 'http-server build -s'",
+    "start:dev": "concurrently 'tsc -w --noEmit' 'parcel src/vim.html'",
     "lint": "eslint src/**/*.ts"
   },
   "devDependencies": {
@@ -16,7 +16,8 @@
     "eslint-config-prettier": "^6.3.0",
     "eslint-plugin-prettier": "^3.1.0",
     "http-server": "^0.11.1",
-    "prettier": "^1.18.2"
+    "prettier": "^1.18.2",
+    "typescript": "^3.6.3"
   },
   "dependencies": {
     "vim-wasm": "^0.0.12"
