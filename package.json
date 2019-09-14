@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "move-deps": "mkdir -p dist && cp -r src/vim dist/vim",
-    "build": "parcel build src/vim.html && npm run move-deps",
+    "build": "parcel build src/vim.html && npm run move-deps && cp src/manifest.json dist/manifest.json",
     "start:dev": "npm run move-deps && concurrently 'tsc -w --noEmit' 'parcel src/vim.html'",
     "lint": "eslint src/**/*.ts"
   },
