@@ -1317,6 +1317,11 @@ validate-npm-package-license@^3.0.1:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
 
+vim-wasm@^0.0.12:
+  version "0.0.12"
+  resolved "https://registry.yarnpkg.com/vim-wasm/-/vim-wasm-0.0.12.tgz#bf4fc819b466101f5d7d2204a5660209592f47aa"
+  integrity sha512-20t3jSaT/W3wu8FaLi7BIFLdAmMG89E8BwqQS5pg7K3jh5hd/cVYjoRRLphPCRv6fjbQze96sTng6uGeOf5nYA==
+
 which-module@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/which-module/-/which-module-2.0.0.tgz#d9ef07dce77b9902b8a3a8fa4b31c3e3f7e6e87a"
