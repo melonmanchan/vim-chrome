@@ -6,8 +6,9 @@
   "author": "Matti Jokitulppo <melonmanchan@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "tsc && cp -r src/* build/ && rm build/*.ts",
-    "start:dev": "concurrently 'tsc -w --noEmit' 'parcel src/vim.html'",
+    "move-deps": "mkdir -p dist && cp -r src/vim dist/vim",
+    "build": "parcel build src/vim.html && npm run move-deps",
+    "start:dev": "npm run move-deps && concurrently 'tsc -w --noEmit' 'parcel src/vim.html'",
     "lint": "eslint src/**/*.ts"
   },
   "devDependencies": {
@@ -20,6 +21,7 @@
     "typescript": "^3.6.3"
   },
   "dependencies": {
+    "@types/node": "^12.7.5",
     "vim-wasm": "^0.0.12"
   }
 }
