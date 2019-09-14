@@ -7,6 +7,7 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc && cp -r src/* build/ && rm build/*.ts",
+    "start:dev": "concurrently 'tsc -w' 'http-server build -s'",
     "lint": "eslint src/**/*.ts"
   },
   "devDependencies": {
